@@ -6,7 +6,7 @@
     --cor-bluesecondary: #433F87;
     --cor-blueprimary: #2B2862;
     --cor-pcolor: #72787B;
-    --cor-white: #FFFFFF;
+    --cor-white: #FFF;
     --cor-btn: #D44C1B;
     --fonte-principal: "Nunito Sans";
 }
@@ -167,6 +167,7 @@ body {
 
 .card__texto {
     font-size: 18px;
+    padding: 12px;
     font-weight: 400;
     color: var(--cor-pcolor);
 }
@@ -191,7 +192,8 @@ body {
     margin-bottom: 16px;
 }
 
-.documentos-card__titulo, a {
+.documentos-card__titulo,
+a {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -271,7 +273,8 @@ body {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.active,
+.collapsible:hover {
     background-color: #ccc;
 }
 
@@ -289,7 +292,7 @@ body {
 }
 
 
-.banner__imagem{
+.banner__imagem {
     display: none;
 }
 
@@ -371,9 +374,11 @@ body {
     .card {
         width: 20%;
         background-color: var(--cor-white);
-        border-radius: 2px;
+        border-radius: 8px;
         padding: 24px;
         margin-bottom: 16px;
+        box-shadow: 0px 4px 4px 0px #bbbbbb;
+
     }
 
     .container__card-documento {
@@ -382,13 +387,14 @@ body {
         justify-content: space-around;
         text-align: center;
     }
-    
+
     .card-documento {
         width: 40%;
         background-color: var(--cor-white);
         border-radius: 2px;
         padding: 24px;
         margin-bottom: 16px;
+        box-shadow: 0px 4px 4px 0px #bbbbbb;
     }
 
 }

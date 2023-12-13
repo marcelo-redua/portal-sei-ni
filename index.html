@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marcelo Rédua e Jackson Augusto">
     <title>Portal SEI! - Prefeitura Municipal de Nova Iguaçu</title>
-    <link rel="shortcut icon" href="/img/seilogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/seitest.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,15 +44,21 @@
             <li class="opções__item"><a href="#FAQ" class="opções__link">FAQ</a></li>
         </ul>
     </header>
+
+    <!-- -->
+
     <section class="banner">
         <h2 class="banner__titulo">Você no controle dos seus processos</h2>
         <p class="banner__texto">O Sistema Eletrônico de Informações (SEI) é uma plataforma para a gestão digital de
             documentos e processos, desenvolvida pelo Tribunal Regional Federal da 4ª Região (TRF4). A implantação na
-            administração pública será coordenada pela Secretaria Municipal de Fazenda e Tecnologia de Itaboraí. </p>
+            administração pública será coordenada pela Secretaria Municipal de Administração e Tecnologia. </p>
         <a href="https://192.168.40.26/sip/login.php?sigla_orgao_sistema=PMNI&sigla_sistema=SEI&infra_url=L3NlaS8=" class="banner__botao">Acessar agora</a>
         <a href="" class="banner__botao">Base de testes</a>
         <img class="banner__imagem" src="img/Group 1.svg" alt="">
     </section>
+
+    <!-- Card Titulo -->
+
     <section class="algo">
         <h3 class="algo__texto">Sistema Eletrônico de Informações</h3>
         <h2 class="algo__titulo">Todos ganham com o Processo Eletrônico</h2>
@@ -60,11 +66,6 @@
         <!-- Card -->
 
         <div class="container__card">
-
-
-
-
-
             <div class="card">
                 <h2 class="card__titulo">Como faço para acessar o sistema?</h2>
                 <p class="card__texto">Para apoiar as servidoras e os servidores na utilização do SEI, preparamos alguns
@@ -80,24 +81,33 @@
             </div>
             <div class="card">
                 <h2 class="card__titulo">Quais os benefícios?</h2>
-                <p class="card__texto">
-                    Redução dos custos com tinta e papel;
-                    Agilidade na abertura de processos
-                    Tudo feito de forma online (Sem transporte físico)
-                    Integridade das informações (Assinatura, histórico e criptografia)
-                    Assinatura eletrônica
-                </p>
+                <ul class="card__texto" style="list-style-type: disc;">
+                    <li>Redução dos custos com tinta e papel;</li>
+                    <br>
+                    <li>Agilidade na abertura de processos;</li>
+                    <br>
+                    <li>Tudo feito de forma online (Sem transporte físico);</li>
+                    <br>
+                    <li>Integridade das informações (Assinatura, histórico e criptografia);</li>
+                    <br>
+                    <li>Assinatura eletrônica.</li>                                
+                </ul>
             </div>
             <div class="card">
                 <h2 class="card__titulo">O que ele pode fazer?</h2>
-                <p class="card__texto">
-                    Controle de processos
-                    Gestão de documentos
-                    Tramitação entre setores
-                    Assinatura eletrônica
-                    Peticionamento e Usuário Externo
-                    Controle de prazos
-                </p>
+                <ul class="card__texto" style="list-style-type: disc;">
+                    <li>Controle de processos</li>
+                    <br>
+                    <li>Gestão de documentos</li>
+                    <br>
+                    <li>Tramitação entre setores</li>
+                    <br>
+                    <li>Assinatura eletrônica</li>
+                    <br>
+                    <li>Peticionamento e Usuário Externo</li>
+                    <br>
+                    <li>Controle de prazos</li>
+                </ul>
             </div>
 
         </div>
@@ -135,10 +145,7 @@
                     </div>
                 </a>
             </div>
-
-
         </div>
-
     </section>
     <section class="aula">
         <h2 class="aula__titulo">Ambiente Virtual de Aprendizagem</h2>
@@ -151,7 +158,6 @@
         <button type="button" class="collapsible"># Quando o SEI chagará ao meu setor e minha secretaria?</button>
         <div class="content">
             <p>
-
                 A implantação do SEI seguirá o cronograma publicado no Decreto 132 de 2023 que institui o SISTEMA
                 ELETRÔNICO DE INFORMAÇÕES como único meio de trabalho com o processo administrativo. Seguiremos a ordem
                 das secretarias na sua respectiva fase de implantação.
@@ -160,31 +166,38 @@
         <button type="button" class="collapsible"># Quando vou receber meu usuário e senha?</button>
         <div class="content">
             <p>
-
                 Os usuários serão criados a medida que a implantação for ocorrendo nas demais secretarias e serão
                 enviados via e-mail para cada usuário treinado.
             </p>
         </div>
         <button type="button" class="collapsible"># Como desfazer tramitação?</button>
         <div class="content">
-            <p>Não é possível desfazer uma tramitação dentro do SEI! Você precisará ligar para o setor e pedir que envie
-                o processo de volta ao seu setor. </p>
+            <p>
+                Não é possível desfazer uma tramitação dentro do SEI! Você precisará ligar para o setor e pedir que envie
+                o processo de volta ao seu setor. 
+            </p>
         </div>
         <button type="button" class="collapsible"># Os processos podem ser editados no SEI?</button>
         <div class="content">
-            <p>Somente o setor que criou o processo ou documento pode editá-lo.</p>
+            <p>
+                Somente o setor que criou o processo ou documento pode editá-lo.
+            </p>
         </div>
         <button type="button" class="collapsible"># No SEI existem documentos avulsos?</button>
         <div class="content">
-            <p>Todos os documentos criados no SEI pertencem a um processo. Ou seja, se quiser criar um documento você
-                precisa abrir um processo antes. </p>
+            <p>
+                Todos os documentos criados no SEI pertencem a um processo. Ou seja, se quiser criar um documento você
+                precisa abrir um processo antes. 
+            </p>
         </div>
         <button type="button" class="collapsible"># Como funciona o Retorno Programado de um processo?</button>
         <div class="content">
-            <p>Assim que você escolhe uma data para o processo retornar à sua unidade, ele estará restrito a ser
+            <p>
+                Assim que você escolhe uma data para o processo retornar à sua unidade, ele estará restrito a ser
                 encaminhado de volta apenas ao seu departamento. Ao definirmos um prazo durante o encaminhamento,
                 estamos estabelecendo uma data para o retorno ao departamento de origem. Portanto, se houver um prazo
-                definido para o retorno, o processo não poderá ser redirecionado para outras unidades. </p>
+                definido para o retorno, o processo não poderá ser redirecionado para outras unidades. 
+            </p>
         </div>
     </section>
     <section class="duvidas">
