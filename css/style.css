@@ -40,6 +40,7 @@ body {
 .container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .container__imagem {
@@ -107,6 +108,19 @@ body {
 
 }
 
+.assistir__botao {
+    padding: 8px;
+    margin-top: 24px;
+    display: grid;
+    background-color: var(--cor-orange);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--cor-white);
+    text-decoration: none;
+    border-radius: 2px;
+}
+
 .banner__botao:hover {
     background-color: var(--cor-btn);
 }
@@ -115,7 +129,7 @@ body {
     padding: 16px;
 }
 
-.algo__texto{
+.algo__texto {
     font-size: 19px;
     font-weight: 400;
     color: var(--cor-blueprimary);
@@ -127,6 +141,14 @@ body {
     font-weight: 700;
     color: var(--cor-orange);
     padding-bottom: 16px;
+}
+
+
+
+.container__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card {
@@ -177,11 +199,18 @@ body {
     color: var(--cor-orange)
 }
 
-.documentos__logo{
+.documentos__logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px;
+}
+
+.container__card-documento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .card-documento {
@@ -223,5 +252,142 @@ body {
     color: var(--cor-white);
     padding: 16px;
     text-align: center;
+    font-size: 14px;
+}
+
+.collapsible {
+    font-family: nunito sans;
+    background-color: var(--cor-white);
+    color: var(--cor-blueprimary);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 16px;
+    display: none;
+    overflow: hidden;
+    background-color: var(--cor-background);
+    color: var(--cor-pcolor);
+}
+
+.opções {
+    display: none;
+}
+
+
+.banner__imagem{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .opções {
+        display: flex;
+    }
+
+    .opções__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+        color: var(--cor-white);
+    }
+
+    .opções__link {
+        color: var(--cor-white);
+    }
+
+    .cabeçalho__menu-hamburguer {
+        display: none;
+    }
+
+    .algo__texto {
+        text-align: center;
+    }
+
+    .algo__titulo {
+        text-align: center;
+
+    }
+
+    .banner__titulo {
+        font-size: 64px;
+        width: 50%;
+    }
+
+    .banner__texto {
+        font-size: 22px;
+        width: 50%;
+    }
+
+    .banner {
+        padding: 64px;
+    }
+
+    .algo {
+        padding: 64px;
+    }
+
+    .assistir__botao {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .banner__botao {
+        width: 300px;
+
+    }
+
+    .documentos {
+        padding: 64px;
+    }
+
+    .faq {
+        padding: 64px;
+    }
+
+    .banner__imagem {
+        position: relative;
+    }
+
+    .container__card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 20%;
+        background-color: var(--cor-white);
+        border-radius: 2px;
+        padding: 24px;
+        margin-bottom: 16px;
+    }
+
+    .container__card-documento {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    .card-documento {
+        width: 40%;
+        background-color: var(--cor-white);
+        border-radius: 2px;
+        padding: 24px;
+        margin-bottom: 16px;
+    }
 
 }
