@@ -52,7 +52,8 @@
         <p class="banner__texto">O Sistema Eletrônico de Informações (SEI) é uma plataforma para a gestão digital de
             documentos e processos, desenvolvida pelo Tribunal Regional Federal da 4ª Região (TRF4). A implantação na
             administração pública será coordenada pela Secretaria Municipal de Administração e Tecnologia. </p>
-        <a href="https://192.168.40.26/sip/login.php?sigla_orgao_sistema=PMNI&sigla_sistema=SEI&infra_url=L3NlaS8=" class="banner__botao">Acessar agora</a>
+        <a href="https://192.168.40.26/sip/login.php?sigla_orgao_sistema=PMNI&sigla_sistema=SEI&infra_url=L3NlaS8="
+            class="banner__botao">Acessar agora</a>
         <a href="" class="banner__botao">Base de testes</a>
         <img class="banner__imagem" src="img/Group 1.svg" alt="">
     </section>
@@ -90,7 +91,7 @@
                     <br>
                     <li>Integridade das informações (Assinatura, histórico e criptografia);</li>
                     <br>
-                    <li>Assinatura eletrônica.</li>                                
+                    <li>Assinatura eletrônica.</li>
                 </ul>
             </div>
             <div class="card">
@@ -155,7 +156,7 @@
     <section class="faq" id="FAQ">
         <h2 class="faq__titulo">Perguntas frequentes</h2>
         <p class="documentos__texto">Tire todas as suas dúvidas</p>
-        <button type="button" class="collapsible"># Quando o SEI chagará ao meu setor e minha secretaria?</button>
+        <button type="button" class="collapsible"># Quando o SEI chegará ao meu setor e minha secretaria?</button>
         <div class="content">
             <p>
                 A implantação do SEI seguirá o cronograma publicado no Decreto 132 de 2023 que institui o SISTEMA
@@ -173,8 +174,9 @@
         <button type="button" class="collapsible"># Como desfazer tramitação?</button>
         <div class="content">
             <p>
-                Não é possível desfazer uma tramitação dentro do SEI! Você precisará ligar para o setor e pedir que envie
-                o processo de volta ao seu setor. 
+                Não é possível desfazer uma tramitação dentro do SEI! Você precisará ligar para o setor e pedir que
+                envie
+                o processo de volta ao seu setor.
             </p>
         </div>
         <button type="button" class="collapsible"># Os processos podem ser editados no SEI?</button>
@@ -187,7 +189,7 @@
         <div class="content">
             <p>
                 Todos os documentos criados no SEI pertencem a um processo. Ou seja, se quiser criar um documento você
-                precisa abrir um processo antes. 
+                precisa abrir um processo antes.
             </p>
         </div>
         <button type="button" class="collapsible"># Como funciona o Retorno Programado de um processo?</button>
@@ -196,7 +198,7 @@
                 Assim que você escolhe uma data para o processo retornar à sua unidade, ele estará restrito a ser
                 encaminhado de volta apenas ao seu departamento. Ao definirmos um prazo durante o encaminhamento,
                 estamos estabelecendo uma data para o retorno ao departamento de origem. Portanto, se houver um prazo
-                definido para o retorno, o processo não poderá ser redirecionado para outras unidades. 
+                definido para o retorno, o processo não poderá ser redirecionado para outras unidades.
             </p>
         </div>
     </section>
@@ -205,10 +207,12 @@
         <p class="documentos__texto">suporte.sei@novaiguacu.rj.gov.br</p>
     </section>
     <footer class="rodape">
-        <p>© 2023 Prefeitura de Nova Iguaçu.</p>
+        <p>© <span id="ano_atual"></span> Prefeitura de Nova Iguaçu.</p>
     </footer>
 
     <script>
+
+        // Menus Collapsibles:
         var coll = document.getElementsByClassName("collapsible");
         var i;
 
@@ -223,6 +227,10 @@
                 }
             });
         }
+
+        // Data e Copyright:
+        document.getElementById('ano_atual').innerText = new Date().getFullYear();        
+
     </script>
 
 
