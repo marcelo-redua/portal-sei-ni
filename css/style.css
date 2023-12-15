@@ -288,8 +288,14 @@ body {
 }
 
 
+.container__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .banner__imagem{
-    display: none;
+
 }
 
 
@@ -389,5 +395,18 @@ body {
         padding: 24px;
         margin-bottom: 16px;
     }
+
+    .container__banner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .banner__imagem{
+        top: 0;
+        right: 0;
+
+    }
+
 
 }
