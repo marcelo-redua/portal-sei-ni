@@ -95,7 +95,7 @@ body {
 }
 
 .banner__botao {
-    padding: 8px;
+    padding: 16px;
     margin-top: 24px;
     display: grid;
     background-color: var(--cor-orange);
@@ -104,12 +104,25 @@ body {
     font-weight: 700;
     color: var(--cor-white);
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 
 }
 
+.banner__botao-middle {
+    padding: 16px;
+    margin-top: 24px;
+    display: inline-block;
+    background-color: var(--cor-orange);
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--cor-white);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 .assistir__botao {
-    padding: 8px;
+    padding: 16px;
     margin-top: 24px;
     display: grid;
     background-color: var(--cor-orange);
@@ -118,7 +131,7 @@ body {
     font-weight: 700;
     color: var(--cor-white);
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .banner__botao:hover {
